@@ -5,6 +5,6 @@ describe('hello', () => {
     .stdout()
     .command(['.', 'friend', '--from=oclif'])
     .it('runs hello cmd', (ctx) => {
-      expect(ctx.stdout).to.contain('hello friend from oclif!')
+      expect(ctx.stdout).to.contain('hello friend from oclif! (./src/commands/hello/index.ts)')
     })
 })
